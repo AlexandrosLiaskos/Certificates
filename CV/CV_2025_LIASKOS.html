@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandros P. Liaskos - CV</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.35)),
+                        url('https://raw.githubusercontent.com/AlexandrosLiaskos/Wallpapers/f89d80dc1c1620cb87bdb5fa3d90cfd082b19b03/313502425_1185576495381182_991235797412716016_n.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: #e2e8f0;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        section, header {
+            transition: all 0.3s ease;
+        }
+
+        section:hover, header:hover {
+            transform: translateY(-2px);
+            background: rgba(0, 0, 0, 0.35) !important;
+            backdrop-filter: blur(16px) !important;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 255, 234, 0.3);
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 255, 234, 0.5);
+        }
+
+        /* Hover effects */
+        .border-[#00FFEA]/20 {
+            transition: border-color 0.3s ease;
+        }
+
+        .border-l-2:hover {
+            border-color: rgba(0, 255, 234, 0.4);
+        }
+
+        /* Headers and text styling */
+        h1, h2, h3 {
+            @apply text-slate-200 font-semibold;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            @apply text-slate-300;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            @apply text-cyan-400 hover:text-cyan-300 transition-colors duration-200;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        /* Add link icon after every anchor tag */
+        a:not(.no-icon)::after {
+            font-family: "Font Awesome 6 Free";
+            content: "\f35d";  /* external link icon */
+            font-weight: 900;
+            font-size: 0.75em;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        /* Increase icon opacity on hover */
+        a:not(.no-icon):hover::after {
+            opacity: 1;
+        }
+
+        /* Social media icons shouldn't have the external link icon */
+        .social-link {
+            @apply text-cyan-400 hover:text-cyan-300 transition-colors duration-200;
+        }
+        .social-link::after {
+            content: none !important;
+        }
+
+        /* Print styles */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 20mm;
+                background: linear-gradient(135deg, #000000, #020617) !important;
+                color: #e2e8f0 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                forced-color-adjust: none !important;
+            }
+
+            /* Prevent section breaks */
+            section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            /* Force all colors to print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                forced-color-adjust: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4">
+    <div class="space-y-8 max-w-4xl mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <header class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 space-y-4 ring-1 ring-slate-700/40 shadow-lg">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-[#00FFEA]">Alexandros P. Liaskos</h1>
+                <p class="text-white/70">Geospatial Analyst • Software Developer</p>
+                <p class="text-white/70">Coastal Erosion Research</p>
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-id-card"></i>
+                Contact Information
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Personal Info -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold mb-4">Personal Information</h3>
+                    <div class="ml-4 mt-2 space-y-2">
+                        <p class="text-white/70 italic text-sm flex items-center gap-2">
+                            <i class="fas fa-signature text-[#00FFEA] w-5"></i>
+                            Alexandros P. Liaskos
+                        </p>
+                        <p class="text-white/70 italic text-sm flex items-center gap-2">
+                            <i class="fas fa-birthday-cake text-[#00FFEA] w-5"></i>
+                            15/06/2000
+                        </p>
+                        <p class="text-white/70 italic text-sm flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-[#00FFEA] w-5"></i>
+                            Athens, Greece
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold mb-2">Social Media</h3>
+                    <div class="space-y-2">
+                        <p>
+                            <a href="https://github.com/AlexandrosLiaskos" class="social-link">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/alexandros-liaskos/" class="social-link">
+                                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:alexandros.liaskos@gmail.com" class="social-link">
+                                <i class="fas fa-envelope mr-2"></i>Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-language"></i>
+                Languages
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Natural Languages -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Languages</h3>
+                    <div class="ml-4 mt-2 space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="fi fi-gr"></span>
+                            <p class="text-white/70 italic text-sm">Greek [ Native ]</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="fi fi-gb"></span>
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/6a51de5808a971dbefa7cde29dafedf1e2a9c8d6/Languages/IELTS_Test_Report_Form_LIASKOS.pdf" 
+                               target="_blank"
+                               class="text-white/70 italic text-sm hover:text-[#00FFEA]">
+                                English [ B2, C2, IELTS ]
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="fi fi-es"></span>
+                            <p class="text-white/70 italic text-sm">Spanish [ B2 ]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h1 class="text-[#00FFEA] text-2xl font-semibold mt-6 mb-4"><i class="fas fa-graduation-cap text-[#00FFEA] mr-2"></i>Academic Education</h1>
+            <div class="space-y-4">
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://www.geol.uoa.gr" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                BSc in Geology and Geo-environment
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2018 -- 2024</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">National and Kapodistrian University of Athens</p>
+                    <p class="text-white/70 italic text-sm">Prof. Niki Evelpidou</p>
+                    <p class="text-white/70 italic text-sm">GPA: 7.8/10</p>
+                </div>
+
+                <h3 class="text-[#00FFEA] text-md font-semibold mt-6 mb-4">MOOCs</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Data Science & Science Courses -->
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://courses.edx.org/certificates/c696c477fb6e47f8bc5dbfb0fc6abd10" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Data Science: R Basics HarvardX
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://courses.edx.org/certificates/c9f9bb15bd5b425fb109111c4306bba3" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Greatest Unsolved Mysteries of the Universe
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://courses.edx.org/certificates/158e69c98b6549f9acd5d5a3d9926dbd" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Exploring Exoplanets
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://courses.edx.org/certificates/907b975531c3467d90eced244d289b84" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Climate Change: The Science and Global Impact
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://mathesis.cup.gr/certificates/6ad3c9cfbc834d0bbc4ebb78101a7eb1?lang=en" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Differential Equations 1
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Philosophy & Humanities Courses -->
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://mathesis.cup.gr/certificates/247a88e43159402caf633fe8ae992483?lang=en" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Man Facing Nature
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://mathesis.cup.gr/certificates/3abc090c8a6c4b4c9149f5866b56e73a?lang=en" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Man Facing Divine
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://mathesis.cup.gr/certificates/80cb295493ec46de8060dbd05a1023c6?lang=en" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Man Facing Himself - Part A & B
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://mathesis.cup.gr/certificates/ebc2d0ea141d459e9164f5f67681464f?lang=en" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Plato
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <h3 class="text-white font-semibold">
+                                <a href="https://courses.edx.org/certificates/a81b1ef3acc541b69fb0261aebdfaebe" 
+                                   target="_blank"
+                                   class="text-white text-xs hover:text-[#00FFEA]">
+                                    Justice Present
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-briefcase"></i>
+                Professional Experience
+            </h2>
+            <div class="space-y-6">
+                <!-- Research Branch -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Researcher</h3>
+                    <div class="ml-4 mt-2">
+                        <!-- EO-PERSIST Entry -->
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-white font-semibold">
+                                    <a href="https://eo-persist.eu/" 
+                                       target="_blank"
+                                       class="text-white hover:text-[#00FFEA]">
+                                        EO-PERSIST
+                                    </a>
+                                </h3>
+                                <span class="text-[#00FFEA] text-sm">Jan 2025 -- Present</span>
+                            </div>
+                            <p class="text-white/70 italic text-sm">Lund University</p>
+                            <p class="text-white/70 italic text-sm">Prof. George P. Petropoulos</p>
+                        </div>
+
+                        <br>
+
+                        <!-- Coastal Analysis Entry -->
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-white font-semibold">
+                                    <a href="https://github.com/AlexandrosLiaskos" 
+                                    target="_blank"
+                                    class="text-white hover:text-[#00FFEA]">
+                                        Coastal Erosion
+                                    </a>
+                                </h3>
+                                <span class="text-[#00FFEA] text-sm">2020 -- Present</span>
+                            </div>
+                            <p class="text-white/70 italic text-sm">NKUA</p>
+                            <p class="text-white/70 italic text-sm">Prof. Niki Evelpidou</p>
+                        </div>
+                    </div>
+                </div>
+ 
+
+                <!-- Software Development -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Freelancer</h3>
+                    <div class="ml-4 mt-2 space-y-6">
+                        <!-- Geospatial Analyst Entry -->
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-white font-semibold">
+                                    <a href="https://github.com/AlexandrosLiaskos" 
+                                    target="_blank"
+                                    class="text-white hover:text-[#00FFEA]">
+                                        Geospatial Analyst
+                                    </a>
+                                </h3>
+                                <span class="text-[#00FFEA] text-sm">2022 - Present</span>
+                            </div>
+                            <p class="text-white/70 text-sm">GIS, Python, Satellite Imagery</p>
+                        </div>
+
+                        <!-- Web Developer Entry -->
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-white font-semibold">
+                                    <a href="https://github.com/AlexandrosLiaskos" 
+                                    target="_blank"
+                                    class="text-white hover:text-[#00FFEA]">
+                                        Web Developer
+                                    </a>
+                                </h3>
+                                <span class="text-[#00FFEA] text-sm">2024 - Present</span>
+                            </div>
+                            <p class="text-white/70 text-sm">React-based, Static Sites</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Industry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Service Industry</h3>
+                    <div class="ml-4 mt-2 space-y-6">
+                        <!-- Assistant Waiter Entry -->
+                        <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-white font-semibold">
+                                    <a href="https://psaras-taverna.gr/" 
+                                    target="_blank"
+                                    class="text-white hover:text-[#00FFEA]">
+                                        Assistant Waiter
+                                    </a>
+                                </h3>
+                                <span class="text-[#ff0033] text-sm">2018 - 2024</span>
+                            </div>
+                            <p class="text-white/70 italic text-sm">The Old Tavern of Psarras</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-book"></i>
+                Publications
+            </h2>
+            <div class="space-y-4">
+
+                <!-- Coastal Erosion Publication -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://www.peasa.eu/site/article/view/12" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Coastal erosion: The future of sandy beaches
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Evelpidou, N., Tzouxanioti, M., & Liaskos, A.</p>
+                    <p class="text-white/70 italic text-sm">Proceedings of the European Academy of Sciences and Arts</p>
+                </div>
+
+                <!-- Thesis Publication -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="#" class="text-white hover:text-[#00FFEA]">
+                                Computational Framework in Coastal Vulnerability Assessment (CompCVA)
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2025</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Liaskos, A.</p>
+                    <p class="text-white/70 italic text-sm">BSc Research Thesis</p>
+                </div>
+
+                <!-- Climate Variability Publication -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="#" class="text-white hover:text-[#00FFEA]">
+                                Climate Variability & Climate Change
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Liaskos, A.</p>
+                    <p class="text-white/70 italic text-sm">Unpublished</p>
+                </div>
+
+                <!-- SPI Publication -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="#" class="text-white hover:text-[#00FFEA]">
+                                Standardized Precipitation Index (SPI) in Greece
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Liaskos, A.</p>
+                    <p class="text-white/70 italic text-sm">Unpublished</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-code-branch"></i>
+                Projects
+            </h2>
+            <div class="space-y-6">
+                <!-- CompCVA Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="#" 
+                            class="text-white hover:text-[#00FFEA]">
+                                CompCVA
+                            </a>
+                        </h3>
+                        <span class="text-[#ff00ff] text-sm">In Development</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">A web platform providing automated tools for complex geospatial analysis in the coastal zone.</p>
+                </div>
+
+                <!-- Project Management System Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/pms" 
+                            target="_blank"
+                            class="text-white hover:text-[#00FFEA]">
+                                Project Management System
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">Active</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">A management System that automatically handles Git synchronization and project organization.</p>
+                </div>
+
+                <!-- TauNest Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/TauNest" 
+                            target="_blank"
+                            class="text-white hover:text-[#00FFEA]">
+                                TauNest
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">Active</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Automation of creating native cross-platform apps of your desired websites with the Tauri framework.</p>
+                </div>
+
+                <!-- HGS Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://hgs-web.github.io/HGS/" 
+                            target="_blank"
+                            class="text-white hover:text-[#00FFEA]">
+                                HGS
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">Active</span>
+                    </div>
+                    <p class="text-white/70 text-sm">The official Hellenic Geographical Society (HGS) Website</p>
+                </div>
+
+                <!-- Portfolio Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="#" 
+                            class="text-white hover:text-[#00FFEA]">
+                                Portfolio
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">Active</span>
+                    </div>
+                    <p class="text-white/70 text-sm">Personal Portfolio Website</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Programs Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-globe"></i>
+                International Programs
+            </h2>
+            <div class="space-y-6">
+                <!-- EO-PERSIST Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://eo-persist.eu/" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                EO-PERSIST
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm ">Jan 2025 -- Present</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Lund University</p>
+                    <p class="text-white/70 italic text-sm">Prof George P. Petropoulos</p>
+                </div>
+
+                <!-- CIVIS Madrid Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://certificate.bcdiploma.com/check/59AEFE437D512EA5A3D64FADC33FDDD78FE6ECDB0080A28E1B904654A19ED6E9UThGZGxGaWZNWFo0dituNHczN3ZRUWN4TlVPQWZkYURCbHJEalRJVWtiMkNaNHRj" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Latin America in the Global Networks
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">3-9 July 2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Madrid, Spain</p>
+                    <p class="text-white/70 italic text-sm">CIVIS Program</p>
+                </div>
+
+                <!-- Culture on My Camera Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/a96bbcb00c6779192d3d81cab03dc98af76abb54/International/Denizli_Erasmus_Liaskos.pdf" 
+                               class="text-white hover:text-[#00FFEA]">
+                                Culture on My Camera
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">17-24 July 2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Denizli, Turkey</p>
+                    <p class="text-white/70 italic text-sm">Erasmus+ Program</p>
+                </div>
+
+                <!-- Facing Fire Athens Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="" 
+                               class="text-white hover:text-[#00FFEA]">
+                                Facing Fire
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">19-25 September 2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Athens, Greece</p>
+                    <p class="text-white/70 italic text-sm">Service-Learning Erasmus+</p>
+                </div>
+
+                <!-- Facing Fire Lugo Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/a96bbcb00c6779192d3d81cab03dc98af76abb54/International/Facing_Fire_Lugo_Liaskos.pdf" 
+                               class="text-white hover:text-[#00FFEA]">
+                                Facing Fire Internship
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">23 June – 20 July 2023</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Lugo, Spain</p>
+                    <p class="text-white/70 italic text-sm">Internship</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-hands-helping"></i>
+                Volunteering
+            </h2>
+            <div class="space-y-6">
+                <!-- Volunteer FireFighter Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/0be28845887992afc486fe9e88dfc482939a4f70/National/Volunteer_Firefighter.pdf" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Volunteer FireFighter
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">February 2023 - Present</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">12th Fire Station of Athens</p>
+                </div>
+
+                <!-- Student Group Coordinator Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://www.missionanthropos.com/en/" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Student Group Coordinator
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">October 2022 - Present</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Mission Anthropos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Military Service Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-star"></i>
+                Military Service
+            </h2>
+            <div class="space-y-6">
+                <!-- Military Training Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/0be28845887992afc486fe9e88dfc482939a4f70/National/Special_Military_Service_Certificate_1_Liaskos.pdf" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Military Training
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">November 2023</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Kalamata, Greece</p>
+                </div>
+
+                <!-- Military Service Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/0be28845887992afc486fe9e88dfc482939a4f70/National/Special_Military_Service_Certificate_2_Liaskos.pdf" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Military Service
+                            </a>
+                        </h3>
+                        <span class="text-[#ff0033] text-sm">December 2023 - August 2024</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Kalymnos, Greece</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conferences Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-chalkboard-teacher"></i>
+                Conferences
+            </h2>
+            <div class="space-y-6">
+                <!-- GSG 2019 Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/0be28845887992afc486fe9e88dfc482939a4f70/Conferences/GSG_2019_Liaskos.pdf" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Geological Society of Greece
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2019</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Conference</p>
+                </div>
+
+                <!-- GSG 2022 Entry -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4 ml-2">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-white font-semibold">
+                            <a href="https://github.com/AlexandrosLiaskos/Certificates/blob/0be28845887992afc486fe9e88dfc482939a4f70/Conferences/GSG_2022_Liaskos.pdf" 
+                               target="_blank"
+                               class="text-white hover:text-[#00FFEA]">
+                                Geological Society of Greece
+                            </a>
+                        </h3>
+                        <span class="text-[#00FFEA] text-sm">2022</span>
+                    </div>
+                    <p class="text-white/70 italic text-sm">Conference</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="bg-black/45 backdrop-blur-[20px] rounded-lg p-6 ring-1 ring-slate-700/40 shadow-lg">
+            <h2 class="text-xl font-bold text-[#00FFEA] mb-4 flex items-center gap-2">
+                <i class="fas fa-code"></i>
+                Technical Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tools & Technologies -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Software</h3>
+                    <div class="ml-4 mt-2 space-y-2">
+                        <p class="text-white/70 italic text-sm">ArcGIS Pro • QGIS • ArcMap</p>
+                        <p class="text-white/70 italic text-sm">GEE • Copernicus • Earthdata • SNAP</p>
+                        <p class="text-white/70 italic text-sm">VsCode • Colab • Jupyter</p>
+                        <p class="text-white/70 italic text-sm">Github • Hugging Face</p>                        
+                        <p class="text-white/70 italic text-sm">Arch Linux • Ubuntu</p>
+                        <p class="text-white/70 italic text-sm">Obsidian • Notion • Slack</p>
+                        <p class="text-white/70 italic text-sm">Office</p>
+                    </div>
+                </div>
+
+                <!-- Markup Languages -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Prpgramming Languages</h3>
+                    <div class="ml-4 mt-2 space-y-2">
+                        <p class="text-white/70 italic text-sm">Python</p>
+                        <p class="text-white/70 italic text-sm">Bash</p>
+                        <p class="text-white/70 italic text-sm">JavaScript</p>
+                        <p class="text-white/70 italic text-sm">Markdown</p>
+                        <p class="text-white/70 italic text-sm">HTML</p>
+                        <p class="text-white/70 italic text-sm">JSON</p>
+                        <p class="text-white/70 italic text-sm">LaTeX</p>
+                    </div>
+                </div>
+
+                <!-- Web Frameworks -->
+                <div class="border-l-2 border-[#00FFEA]/20 pl-4">
+                    <h3 class="text-[#00FFEA] font-semibold">Web Frameworks</h3>
+                    <div class="ml-4 mt-2 space-y-2">
+                        <p class="text-white/70 italic text-sm">React</p>
+                        <p class="text-white/70 italic text-sm">Node.js, Next.js, Vue.js</p>
+                        <p class="text-white/70 italic text-sm">Vitepress</p>
+                        <p class="text-white/70 italic text-sm">Hugo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
